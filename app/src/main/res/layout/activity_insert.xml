@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity"
+    style="@style/InsertTheme"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@color/background_model"
+        android:paddingLeft="30dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所属主体："
+                    android:textSize="20dp">
+                </TextView>
+                <EditText
+                    android:layout_width="250dp"
+                    android:id="@+id/account"
+                    android:hint="请输入账号所属主体">
+                </EditText>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号名称："
+                    android:textSize="20dp">
+                </TextView>
+                <EditText
+                    android:layout_width="250dp"
+                    android:id="@+id/username"
+                    android:hint="请输入账号名称">
+                </EditText>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号密码："
+                    android:textSize="20dp">
+                </TextView>
+                <EditText
+                    android:layout_width="250dp"
+                    android:id="@+id/password"
+                    android:hint="请输入账号密码">
+                </EditText>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:paddingRight="40dp"
+            android:gravity="right">
+            <Button
+                android:id="@+id/closeActivity"
+                android:layout_width="120dp"
+                android:theme="@style/DefaultButton"
+                android:layout_height="35dp"
+                android:background="@color/default_button"
+                android:layout_marginRight="10dp"
+                android:text="关闭当前页面">
+
+            </Button>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:background="@color/default_button"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:width="50dp"
+                android:theme="@style/DefaultButton"
+                android:text="保存"></Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>
